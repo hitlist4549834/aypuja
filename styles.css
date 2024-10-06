@@ -1,0 +1,75 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.media-player {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 127, 0.6); /* Neon pink shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    position: relative;
+}
+
+video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.controls {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+button, select {
+    background: #000; /* Black */
+    color: pink; /* Pink button text */
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button i, select, label i {
+    color: pink; /* Pink */
+}
+
+button:hover, select:hover {
+    background: #555; /* Slightly lighter black */
+}
+
+button:focus, select:focus, label i:focus {
+    outline: none;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: black; /* Black */
+    color: pink; /* Pink text */
+    width: 80px;
+}
+
+.watermark {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 70px;
+    opacity: 0.25; /* 25% opacity */
+}
